@@ -13,7 +13,7 @@ function displayResults(pics, maxResults=5) {
   $('.filters').show().fadeIn(4000);
   for(let i=0; i < pics.results.length && i < maxResults; i++) {
     $('.results').hide().fadeIn(3000).append(
-      `<img class="med" id=${[i]} src="${pics.results[i].urls.regular}" alt="${pics.results[i].alt_description} by
+      `<img class="med" id=${[i]} src="${pics.results[i].urls.regular}" alt="${pics.results[i].alt_description}
       ${pics.results[i].user.name}">`)
   }
 }
