@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Worth A Thousand Words</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+    </head>
+    <body>
+      <div class="lrg-container"></div>
+      <section class="container">
+          <h1> Create a Postcard</h1>
+          <p> Type in a word to find the image of your choice!</p>
+          <form class="searchForm">
+            <fieldset>
+              <label for="image-search">Please enter any word or phrase:</label>
+              <input type="text" name="-js-image-search" id="js-image-search"
+              placeholder="Enter keyword...."required>
+              <button type="submit">Search</button>
+            </fieldset>
+          </form>
+      </section>
+      <p id="js-error-message" class="error-message"></p>
+      <section class="results">
+      </section>
+
+    <!---Having trouble with the filters.
+    I found a plug-in the does filters, but I am doing something wrong, should I created the buttons dynamically?-->
+
+      <section class="filters">
+        <button class="filter" id="nofilter">no filter</button>
+        <button class="filter" id="inkwell">inkwell</button>
+        <button class="filter" id="aden">aden</button>
+        <button class="filter"id="xpro2">xpro2</button>
+        <button class="filter"id="_1977">1977</button>
+        <button class="filter"id="lark">lark</button>
+        <button class="filter"id="nashville">nashville</button>
+        <button class="filter"id="moon">moon</button>
+        <button class="filter"id="mayfair">mayfair</button>
+        <button class="filter"id="reyes">reyes</button>
+        <button class="filter"id="hudson">hudson</button>
+        <button class="filter"id="toaster">toaster</button>
+        <button class="filter"id="gingham">gingham</button>
+        <button class="filter"id="kelvin">kelvin</button>
+        <button class="filter"id="lofi">lofi</button>
+      </section>
+      <script>
+        var a2a_config = a2a_config || {};
+        a2a_config.overlays = a2a_config.overlays || [];
+        a2a_config.overlays.push({
+        services: ['pinterest', 'facebook', 'twitter'],
+        size: '25',
+        style: 'vertical',
+        position: 'bottom right'
+});
+</script>
+
+      <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
+
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    </body>
+    </html>
